@@ -137,3 +137,25 @@ footer {
 	}
 	.map {float: right;}
 }
+
+@media screen and (max-width: 1200px) {
+	main {
+		padding: 2em 1em;
+		h1 { width: 100%;}
+	}
+
+	section { padding: 3.5em 7.5em; }
+	footer {
+		 padding: 2em 7.5em; 
+		 text-align: center;
+		 address, .map { float: none; }
+		}
+
+	#catalog {
+		.column {
+			width: 50%;
+			margin-bottom: 2em;
+		}
+	}
+
+}
