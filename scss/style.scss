@@ -117,3 +117,23 @@ h2 {
 		}
 	}
 }
+
+footer {
+	background-color: black;
+	@include clearfix;
+
+	.logo {
+		font-size: 1.5em;
+		border-bottom: 1px solid $main_red;
+		width: 100%;
+	}
+	address, .map {
+		margin: 1em;
+
+	}
+	address {
+		float: left;
+
+	}
+	.map {float: right;}
+}
