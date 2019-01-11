@@ -2,3 +2,63 @@
 @import 'mixins';
 
 @include main;
+
+section {
+	padding: 7em 15em;
+}
+
+main, footer {
+	padding: 2em 15em;
+}
+
+main {
+	height: 100vh;
+	background-image: url('../slike/background.jpg');
+	background-size: cover;
+}
+
+header {
+	background-color: white;
+	padding: 1em;
+	@include clearfix;
+}
+
+.logo {
+	font-size: 2em;
+	font-family: $logo_font;
+	font-weight: bold;
+	float: left;
+	span {color: $main_red;}
+}
+
+nav {
+	float: right;
+	ul{
+		margin-top: 1em;
+		list-style: none;
+		li{
+			display: inline-block;
+			margin-left: 1em;
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover {
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+h1, h3 {
+	color: white;
+	text-align: center;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3em;
+	border-bottom: 1px solid $main_red;
+	width: 60%;
+	margin: 20% auto 0; /*gore, levo/desno, dole*/
+}
